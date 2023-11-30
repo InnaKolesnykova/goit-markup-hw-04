@@ -164,6 +164,12 @@ a.nav-header-link
     letter-spacing: 0.28px;
 }
 
+.contacts-link-icon-email{
+    fill: var(--secondary-color);
+    width: 10px;
+    height: 16px;
+}
+
 
 /* Main Sectionn 1 */
 
