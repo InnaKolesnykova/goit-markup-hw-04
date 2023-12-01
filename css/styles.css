@@ -60,9 +60,22 @@ button
     text-decoration: none;
 }
 
-.link:hover 
+/* .link:hover 
 {
     color: var(--brand-color);
+} */
+
+.link:hover,
+.link:hover svg,
+.link:focus,
+.link:focus svg,
+.team-icon li:hover svg,
+.team-icon li:focus svg,
+.social li:hover svg,
+.social li:focus svg
+ {
+    color: var(--brand-color);
+    fill: var(--brand-color);
 }
 
 img
@@ -150,6 +163,7 @@ a.nav-header-link
 {
     display: flex;
     margin-left: auto;
+    list-style-type: none;
 }
 
 .header-contacts-list-item:first-child 
@@ -164,19 +178,34 @@ a.nav-header-link
     letter-spacing: 0.28px;
 }
 
-.contacts-link-icon-email{
+.contacts-link-icon-email {
     fill: var(--secondary-color);
-    width: 10px;
-    height: 16px;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
 }
 
+.contacts-link-icon-phone {
+    fill: rgba(117, 117, 117, 1);
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+
+}
 
 /* Main Sectionn 1 */
 
 .main-section-1 {
-    background: #2F303A;
+    background-image: 
+    linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/hero/Img.png);
+    background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    display: flex;
+    margin: auto;
 }
 
 .main-title
@@ -345,6 +374,30 @@ a.nav-header-link
     letter-spacing: 0.48px;
 }
 
+.team-icon
+{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.team-icon a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.team-icon svg,
+.social svg
+ {
+    fill: rgba(175, 177, 184, 1);
+    width: 20px;
+    height: 20px;
+}
 
 /* Portfolio */
 
@@ -424,8 +477,8 @@ a.nav-header-link
 /* Footer */
 .fotter {
     background: #2F303A;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
+    margin: auto;
 }
 
 .fotter-link-logo {
@@ -446,6 +499,45 @@ a.nav-header-link
 .adress 
 {
     font-style: normal;
+}
+
+.fotter-container {
+    display: flex;
+    align-items: baseline;
+}
+
+
+
+.social {
+    margin-left: 70px;
+}
+
+.social li {
+    list-style-type: none;
+}
+
+.social ul {
+    gap: 10px;
+    display: flex;
+}
+
+.social a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social p {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--background-color);
+    margin-bottom: 20px;
+
 }
 
 .fotter-contacts-list-item {
