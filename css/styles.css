@@ -4,7 +4,12 @@
 --main-color: #212121;
 --secondary-color: #757575;
 --background-color: #ffffff;
---brand-color: #2196F3;   
+--brand-color: #2196F3;
+--icon-color: rgba(245, 244, 250, 1);
+}
+
+li {
+    list-style-type: none;
 }
 
 *
@@ -259,6 +264,22 @@ a.nav-header-link
 {
     margin: 0;
 } */
+.sprite-border {
+    background-color: var(--icon-color);
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sprite-icon {
+    width: 70px;
+    height: 70px;
+}
 
 .main-section-2-title
 {
@@ -380,6 +401,7 @@ a.nav-header-link
     gap: 10px;
     justify-content: center;
     margin-top: 16px;
+    list-style-type: none;
 }
 
 .team-icon a {
@@ -391,13 +413,78 @@ a.nav-header-link
     border-radius: 50%;
 }
 
-.team-icon svg,
-.social svg
+.team-icon a:hover,
+.team-icon a:hover svg,
+.team-icon a:focus,
+.team-icon a:focus svg {
+    background-color: var(--brand-color);
+    fill: var(--background-color);
+}
+
+.team-icon svg
  {
     fill: rgba(175, 177, 184, 1);
     width: 20px;
     height: 20px;
 }
+
+/* Clients */
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients h2 {
+    color: var(--main-color);
+    text-align: center;
+        /* font-family: var(--main-font); */
+    font-size: 36px; 
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.clients ul {
+    display: flex;
+    list-style: none;
+    /* margin: o auto; */
+    gap: 30px;
+    align-items: center;
+}
+
+.clients li {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients a {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid rgba(175, 177, 184, 1);
+}
+
+.clients svg {
+    fill: rgba(175, 177, 184, 1);
+    width: 106px;
+    height: 60px;
+}
+
+.clients a:hover,
+.clients a:hover svg,
+.clients a:focus,
+.clients a:focus svg {
+    fill: var(--brand-color);
+}
+
 
 /* Portfolio */
 
@@ -512,13 +599,21 @@ a.nav-header-link
     margin-left: 70px;
 }
 
-.social li {
-    list-style-type: none;
+.social p {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--background-color);
+    margin-bottom: 20px;
 }
 
 .social ul {
     gap: 10px;
     display: flex;
+}
+
+.social li {
+    list-style-type: none;
 }
 
 .social a {
@@ -531,14 +626,20 @@ a.nav-header-link
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social p {
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--background-color);
-    margin-bottom: 20px;
-
+.social svg {
+    fill: rgba(255, 255, 255, 1);
+    width: 20px;
+    height: 20px;
 }
+
+.social a:hover,
+.social a:hover svg,
+.social a:focus,
+.social a:focus svg {
+    background-color: var(--brand-color);
+    fill: var(--background-color);
+}
+
 
 .fotter-contacts-list-item {
     margin-bottom: 9px;
