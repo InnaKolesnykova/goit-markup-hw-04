@@ -12,6 +12,7 @@ li {
     list-style-type: none;
 }
 
+
 *
 {
     margin: 0;
@@ -181,6 +182,8 @@ a.nav-header-link
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
 }
 
 .contacts-link-icon-email {
@@ -438,7 +441,6 @@ a.nav-header-link
 .clients h2 {
     color: var(--main-color);
     text-align: center;
-        /* font-family: var(--main-font); */
     font-size: 36px; 
     font-weight: 700;
     letter-spacing: 1.08px;
@@ -449,9 +451,7 @@ a.nav-header-link
 .clients ul {
     display: flex;
     list-style: none;
-    /* margin: o auto; */
     gap: 30px;
-    align-items: center;
 }
 
 .clients li {
@@ -518,7 +518,14 @@ a.nav-header-link
     letter-spacing: 0.48px;
     cursor: pointer;
     font-family: var(--main-font);
+    border-radius: 4px;
 }
+
+.filter-btn:hover,
+.filter-btn:focus {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
 
 
 /*Project Portfolio*/
@@ -534,6 +541,18 @@ a.nav-header-link
 .list-project li {
     max-width: 370px;
 }
+
+.list-project a {
+    text-decoration: none;
+    display: block;
+}
+
+.list-project a:hover,
+.list-project a:focus
+{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12)
+}
+
 
 .project-text
 {
