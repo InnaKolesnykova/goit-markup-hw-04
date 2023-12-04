@@ -65,7 +65,16 @@
       <section class="main-section-1">
         <div class="container">
           <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="btn" type="button">Замовити послугу</button>
+          <button data-modal-open class="btn" type="button">Замовити послугу</button>
+          <div class="backdrop">
+          <div class="modal-window">
+            <button data-modal-close class="modal-btn">
+              <svg class="sprite-close">
+                <use href="sprite.svg#close"></use>
+              </svg>
+            </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -381,7 +390,6 @@
         </div>
       </section>
     </main>
-
     <!-- Footer -->
     <footer class="fotter">
       <div class="container fotter-container">
