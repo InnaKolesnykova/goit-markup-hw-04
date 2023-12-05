@@ -25,7 +25,7 @@
       <div class="container header-container">
         <a class="header-link link" href=""
           ><span class="header-link-color">Web</span>Studio</a>
-        <nav class="nav">
+         <nav class="nav">
           <!-- Menu Nav -->
           <ul class="header-list list">
             <li class="header-list-item">
@@ -66,7 +66,7 @@
         <div class="container">
           <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open class="btn" type="button">Замовити послугу</button>
-          <div class="backdrop">
+          <div class="backdrop is-hidden" data-modal>
           <div class="modal-window">
             <button data-modal-close class="modal-btn">
               <svg class="sprite-close">
@@ -143,31 +143,39 @@
           <h2 class="main-section-3-title">Чим ми займаємося</h2>
           <ul class="main-section-3-list">
             <!-- box1 -->
-            <li class="main-section-3-item">
-              <img
+            <li>
+              <div class="main-section-3-label">
+                <img
                 src="images/hero/box-1.jpg"
                 alt="photo"
                 width="370"
-                height="294"
-              />
+                height="294"/>
+              <p>десктопні додатки</p>
+              </div>
             </li>
             <!-- box2 -->
-            <li class="main-section-3-item">
-              <img
+            <li>
+              <div class="main-section-3-label">
+               <img
                 src="images/hero/box-2.jpg"
                 alt="photo2"
                 width="370"
                 height="294"
               />
+              <p>мобільні додатки</p>
+              </div>
             </li>
             <!-- box3 -->
-            <li class="main-section-3-item">
-              <img
+            <li>
+              <div class="main-section-3-label">
+               <img
                 src="images/hero/box-3.jpg"
                 alt="photo3"
                 width="370"
                 height="294"
               />
+              <p>дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -458,5 +466,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
