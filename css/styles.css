@@ -268,6 +268,8 @@ a.nav-header-link
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.20);
+    visibility: visible;
+    z-index: 1;
 }
 
 .backdrop.is-hidden {
@@ -635,7 +637,7 @@ a.nav-header-link
     display: block;
     transition-property: box-shadow;
     transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -647,23 +649,20 @@ a.nav-header-link
 
 .box {
     position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    background: rgba(33, 150, 243, 0.90);
+    overflow: hidden; 
 }
 
 .overlay  {
     position: absolute;
-    padding: 64px 24px;
-    /* background: rgba(33, 150, 243, 0.90); */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    transform: translateX(100%);
+    background: rgba(33, 150, 243, 0.90);
+    padding: 63px 24px;
+    transform: translatey(100%);
     transition: transform 250ms ease-in-out;
-    transition-property: inherit;
-    transition-duration: 250ms;
+   
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -672,11 +671,18 @@ a.nav-header-link
     font-family: var(--main-font);
     font-size: 18px;
     font-weight: 400;
-    line-height: 28;
+    line-height: 1.55;
     letter-spacing: 0.54px;
-    font-style: normal;
 
 }
+
+.box:hover .overlay {
+    transform: translatey(0);
+}
+
+
+
+
 
 
 
@@ -700,7 +706,7 @@ a.nav-header-link
     margin-bottom: 4px;
 }
 
-.list-project p
+.list-project-p
 {
     color: var(--secondary-color);
     font-family: var(--main-font);
