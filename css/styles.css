@@ -79,10 +79,6 @@ button
     text-decoration: none;
 }
 
-/* .link:hover 
-{
-    color: var(--brand-color);
-} */
 
 .link:hover,
 .link:hover svg,
@@ -122,6 +118,9 @@ img
     font-weight: 700;
     letter-spacing: 0.78px;
     line-height: normal;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
 }
 
 .header-link-color 
@@ -167,6 +166,8 @@ img
     margin-left: 0;
     padding-top: 32px;
     padding-bottom: 32px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a.nav-header-link
@@ -198,6 +199,8 @@ a.nav-header-link
     letter-spacing: 0.28px;
     display: flex;
     align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link-icon-email {
@@ -205,6 +208,8 @@ a.nav-header-link
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link-icon-phone {
@@ -212,7 +217,8 @@ a.nav-header-link
     width: 10px;
     height: 16px;
     margin-right: 10px;
-
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Main Sectionn 1 */
@@ -270,6 +276,9 @@ a.nav-header-link
     background-color: rgba(0, 0, 0, 0.20);
     visibility: visible;
     z-index: 1;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
 }
 
 .backdrop.is-hidden {
@@ -288,6 +297,9 @@ a.nav-header-link
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     width: 528px;
     height: 581px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
 }
 
 .modal-btn {
@@ -303,6 +315,9 @@ a.nav-header-link
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
 }
 
 .sprite-close {
@@ -421,13 +436,6 @@ a.nav-header-link
 }
 
 
-
-/* .main-section-3-list-item
-{
-    display: block;
-} */
-
-
 /* Team box */
 .team
 {
@@ -495,6 +503,8 @@ a.nav-header-link
     justify-content: center;
     margin-top: 16px;
     list-style-type: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon a {
@@ -504,6 +514,7 @@ a.nav-header-link
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    
 }
 
 .team-icon a:hover,
@@ -560,12 +571,15 @@ a.nav-header-link
     justify-content: center;
     border-radius: 4px;
     border: 1px solid rgba(175, 177, 184, 1);
+    
 }
 
 .clients svg {
     fill: rgba(175, 177, 184, 1);
     width: 106px;
     height: 60px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients a:hover,
@@ -609,6 +623,8 @@ a.nav-header-link
     cursor: pointer;
     font-family: var(--main-font);
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -635,10 +651,8 @@ a.nav-header-link
 .list-project a {
     text-decoration: none;
     display: block;
-    transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .list-project a:hover,
@@ -676,16 +690,9 @@ a.nav-header-link
 
 }
 
-.box:hover .overlay {
+.list-project a:hover .overlay {
     transform: translatey(0);
 }
-
-
-
-
-
-
-
 
 
 .project-text
@@ -777,12 +784,15 @@ a.nav-header-link
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
+   
 }
 
 .social svg {
     fill: rgba(255, 255, 255, 1);
     width: 20px;
     height: 20px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social a:hover,
@@ -797,6 +807,14 @@ a.nav-header-link
 .fotter-contacts-list-item {
     margin-bottom: 9px;
 }
+
+.fotter-contacts-list-item a {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
 
 .fotter-contacts-link-white 
 {
