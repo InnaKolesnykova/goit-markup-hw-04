@@ -302,7 +302,7 @@ a.nav-header-link
     width: 528px;
     height: 581px;
     padding: 40px;
-    transition-property: var(--background-color);
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -328,7 +328,7 @@ a.nav-header-link
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: var(--background-color);
+    transition-property: background-color;
 }
 
 .sprite-close {
@@ -523,16 +523,24 @@ a.nav-header-link
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
 .team-icon a:hover,
-.team-icon a:hover svg,
-.team-icon a:focus,
-.team-icon a:focus svg {
+.team-icon a:focus {
     background-color: var(--brand-color);
     fill: var(--background-color);
 }
+
+.team-icon a:hover svg,
+.team-icon a:focus svg {
+    fill: var(--background-color);
+}
+
+
 
 .team-icon svg
  {
@@ -590,7 +598,7 @@ a.nav-header-link
     fill: rgba(175, 177, 184, 1);
     width: 106px;
     height: 60px;
-    transition-property: fill;
+    transition-property: fill, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
