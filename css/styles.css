@@ -296,7 +296,7 @@ a.nav-header-link
     position: absolute;
     top: 50%;
     left: 50%;
-    /* transform: translate(-50%, -50%) scale(1); */
+    transform: translate(-50%, -50%) scale(1);
     background-color: var(--background-color);
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -312,13 +312,13 @@ a.nav-header-link
 
 .backdrop.is-hidden .modal-window {
     transform: translate(-50%, -50%) scale(0.5);   
-    opacity: 0;
+    /* opacity: 0; */
 }
 
-.backdrop .modal-window {
+/* .backdrop .modal-window {
     transform: translate(-50%, -50%) scale(1);
    
-}
+} */
 
 
 
